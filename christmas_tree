@@ -1,0 +1,21 @@
+def fun(s, num):
+    s = s.replace(" ", '')
+    try:
+        int(num)
+    except:
+        return "Неправильнор введено число"
+    k = 0
+    t = 1
+    if num > len(s) or num < 0:
+        return "Неправильнор введено число"
+    while k < (2*num - 1):
+        print(s[0:t])
+        
+        k+=1
+        if k < num:
+            t+=1
+        else:
+            t-=1
+    return " "
+print(fun("abcddsdsfgh", -7))    
+    
